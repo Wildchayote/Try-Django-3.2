@@ -1,0 +1,8 @@
+sk: st3r(xafzip!q!^$%)l(4kv-9$c(efowg6233k_)xw3(olascs
+pass: @2^uj9s0*4csxv-0i%s+@x20b2k3v)8^fhm63ojq*p*zhg%&-a
+
+sk1: ucw%q8drmya*x13fj+dk4^lx(cej30v$ht3(2f_d@qxw4e*63t
+pass1: 612kmk)xhn&nd8zwi2$&oqw+8(zh@s3d21+ge&274l^f^98j1w
+
+
+django_bucket: https://django-buckett.ams3.digitaloceanspaces.com

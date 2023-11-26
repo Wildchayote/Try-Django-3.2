@@ -8,6 +8,7 @@ from django.db.models import Q
 from django.urls import reverse
 from .utils import number_str_to_float
 from .validators import validate_unit_of_measure
+from jsonfield import JSONField
 """
 - Global
     - Ingredients

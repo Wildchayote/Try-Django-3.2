@@ -19,15 +19,14 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/3.2/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = os.environ.get('DJANGO_SECRET_KEY')
 
+SECRET_KEY = os.environ.get('DJANGO_SECRET_KEY',)
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = str(os.environ.get('DEBUG')) == "1" # 1 == True
+DEBUG = str(os.environ.get('DEBUG'))=='1'
 
-ENV_ALLOWED_HOST = os.environ.get('DJANGO_ALLOWED_HOST') or None
 ALLOWED_HOSTS = []
 if not DEBUG:
-    ALLOWED_HOSTS += [os.environ.get('DJANGO_ALLOWED_HOST')]
+    ALLOWED_HOSTS += [os.environ.get('ALLOWED_HOST')]
 
 # Application definition
 # python manage.py makemigrations
@@ -40,10 +39,10 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    # third-party
+    # 'third-party',
     'django_htmx',
     'storages',
-    # internal
+    # 'internal',
     'articles',
     'inventory',
     'meals',
@@ -174,7 +173,7 @@ from .cdn.conf import * # noqa
 
 # https://www.cfe.sh/blog/django-static-files-digitalocean-spaces
 
-# https://trydjango.nyc3.digitaloceanspaces.com
+# https://django-buckett.ams3.digitaloceanspaces.com
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field
